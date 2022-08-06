@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casepacer</title>
+
+    <style>
+        #child-tabs {
+            position: absolute;
+        }
+
+        #parent {
+            position: relative;
+        }
+
+        .content-parent {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .carousel-indicators {
+            top: 0 !important;
+            width: 100% !important;
+            position: unset !important;
+            border-bottom: 0.138vw solid rgba(130, 95, 232, 0.5);
+            padding-top: 30px;
+            margin-left: 0% !important;
+            display: flex;
+            flex-direction: row !important;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .carousel-indicators .active {
+            background-color: #fff;
+            border-color: #4100ff !important;
+            border-bottom: 0.2vw solid transparent;
+            font-weight: 700 !important;
+            color: #4100ff;
+            padding-bottom: 30px;
+
+        }
+
+        .carousel-indicators h1 {
+            font-weight: 600 !important;
+            font-size: 17px;
+            width: 100% !important;
+            margin: 0;
+            padding-bottom: 15px;
+        }
+
+        .content-heading {
+            text-align: left !important;
+            font-size: 3.33vw !important;
+            line-height: 50px;
+            margin-bottom: 10px;
+            line-height: 1.4;
+            color: #525361;
+        }
+
+        .content-description {
+            color: #525361 !important;
+            font-family: "circular-std", "Helvetica Neue", sans-serif !important;
+            font-weight: 300;
+            line-height: 1.5;
+            font-size: 24px;
+            text-align: left !important;
+        }
+
+        .tab-right-content {
+            width: 50%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .tab-right-content img {
+            margin: 25px 0;
+            width: 100%;
+        }
+
+        .content-button {
+            border: none;
+            background-color: white;
+            color: #118e44;
+            font-size: 0.97vw;
+            margin-top: 15px;
+            justify-content: flex-start;
+        }
+
+        .tab-left-content {
+            width: 50%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .bi-arrow-right-circle {
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .carousel-indicators {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                text-align: left !important;
+                border-bottom: 0.138vw solid rgba(130, 95, 232, 0.5);
+            }
+
+            .carousel-indicators h1 {
+                font-weight: 500 !important;
+                font-size: 17px;
+                padding: 0 0 20px !important;
+            }
+
+            .carousel-indicators .active {
+                background-color: #fff;
+                border: none;
+                border-bottom: none;
+                font-weight: 600 !important;
+                padding: 0 0 40px !important;
+
+            }
+
+            .content-parent {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .tab-left-content {
+                width: 100%;
+            }
+
+            .tab-right-content {
+                width: 100%;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+            .content-heading {
+                font-size: 30px !important;
+                font-weight: 600;
+
+            }
+
+            .content-button {
+                font-size: 2.97vw !important;
+                margin-bottom: 15px !important;
+            }
+
+            .content-description {
+                font-size: 19px;
+            }
+
+            .tab-right-content img {
+                margin: auto;
+                height: auto;
+            }
+
+
+        }
+    </style>
+
+
+    <!-- bootstrap file  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <h1 type="span" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1">For Lawyers</h1>
+                <h1 type="span" data-target="#carouselExampleIndicators" data-slide-to="1" aria-label="Slide 2">For
+                    Admin</h1>
+                <h1 type="span" data-target="#carouselExampleIndicators" data-slide-to="2" aria-label="Slide 3">For
+                    Intake Specialists</h1>
+                <h1 type="span" data-target="#carouselExampleIndicators" data-slide-to="3" aria-label="Slide 3">For
+                    Paralegals</h1>
+            </div>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="content-parent">
+                        <div class="tab-left-content">
+                            <h1 class="content-heading">For Lawyers</h1>
+                            <p class="content-description">Instantly monitor status of every case from the dashboard,
+                                from anywhere in the world.
+                            </p>
+                            <button class="content-button">EXPLORE THE
+                                BENEFITS
+                                <span><i class="bi bi-arrow-right-circle"></i></span></button>
+                        </div>
+
+                        <div class="tab-right-content">
+                            <img src="./images/for-lawyers-screenshot.png" alt="Los Angeles">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="content-parent">
+                        <div class="tab-left-content">
+                            <h1 class="content-heading">For Admin</h1>
+                            <p class="content-description">Instantly monitor status of every case from the dashboard,
+                                from anywhere in the world.
+                            </p>
+                            <button class="content-button">EXPLORE THE
+                                BENEFITS
+                                <span><i class="bi bi-arrow-right-circle"></i></span></button>
+                        </div>
+
+                        <div class="tab-right-content">
+                            <img src="./images/admin-screenshot.png" alt="Los Angeles">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="content-parent">
+                        <div class="tab-left-content">
+                            <h1 class="content-heading">For Intake Specialists
+                            </h1>
+                            <p class="content-description">Automate intake forms for all clients with common templates,
+                                collecting initial data for each case without ever picking up the phone or writing an
+                                email.
+                            </p>
+                            <button class="content-button">EXPLORE THE
+                                BENEFITS
+                                <span><i class="bi bi-arrow-right-circle"></i></span></button>
+                        </div>
+                        <div class="tab-right-content">
+                            <img src="./images/intake-specialists-screenshot.png" alt="Los Angeles">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="content-parent">
+                        <div class="tab-left-content">
+                            <h1 class="content-heading">For Paralegals</h1>
+                            <p class="content-description">Manage all documents and deadlines from a single central hub,
+                                using customizable workflows and reminders to automate your internal processes.
+                            </p>
+                            <button class="content-button">EXPLORE THE
+                                BENEFITS
+                                <span><i class="bi bi-arrow-right-circle"></i></span></button>
+                        </div>
+                        <div class="tab-right-content">
+                            <img src="./images/paralegal-screenshot.png" alt="Los Angeles">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- bootstarp icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
